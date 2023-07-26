@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+
+
+    <title>test Pipedrive</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="header">
+            <button class="won">Won</button>
+            <button class="lost">Lost</button>
+            <button class="drop_list">List</button>
+            <button class="three_dot">...</button>
+            <div class="drop_menu">
+                <span>Duplicate</span>
+                <span>Merge</span>
+                <span>Export as XLS</span>
+                <span>Conver to a lead</span>
+                <span>Delete</span>
+                <span>Share feedback</span>
+                <span>Learn more</span>
+                <span>Manage sidebar</span>
+                <span>Manage apps</span>
+                <span class="create">NEW Create a job</span>
+            </div>
+        </div>
+        <div class="hero">
+            <div class="call_place">
+                <div class="deal">
+                    <span class="details">Details &or;</span>
+                    <div class="details_info">
+                        <div class="details_key">
+                            <div class="keyOf"><p>Address</p><span class="keyOn_address">-</span></div>
+                            <div class="keyOf"><p>Job type</p><span class="keyOn_jobType">-</span></div>
+                            <div class="keyOf"><p>Job source</p><span class="keyOn_jobSource">-</span></div>
+                            <div class="keyOf"><p>Job date</p><span class="keyOn_jobDate">-</span></div>
+                            <div class="keyOf"><p>Job start time</p><span class="keyOn_startTime">-</span></div>
+                            <div class="keyOf"><p>Job end time</p><span class="keyOn_endTime">-</span></div>
+                            <div class="keyOf"><p>Tampa Technician</p><span class="keyOn_tampa">-</span></div>
+                            <div class="keyOf"><p>Miami Technician</p><span class="keyOn_miami">-</span></div>
+                            <div class="keyOf"><p>Orlando Technician</p><span class="keyOn_orlando">-</span></div>
+                            <div class="keyOf"><p>Houston Technician</p><span class="keyOn_houston">-</span></div>
+                            <div class="keyOf"><p>Charlotte Technician</p><span class="keyOn_charlotte">-</span></div>
+                            <div class="keyOf"><p>Austin Technician</p><span class="keyOn_austin">-</span></div>
+                            <div class="keyOf"><p>Area</p><span class="keyOn_area">-</span></div>
+                            <div class="keyOf"><p>Job Comment</p><span class="keyOn_jobComment">-</span></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="focus">
+                <h1>No focus items yet</h1>
+            </div>
+            <div class="frame">
+                <div class="frame_head">
+                    <p>New Create a job</p>
+                    <span class="x">&times;</span>
+                </div>
+                <div class="frame_body">
+                    <div class="frame_box clientDetails">
+                        <h2>Client details</h2>
+                        <div class="input_box">
+                            <input type="text" placeholder="First name" class="name">
+                            <input type="text" placeholder="Last name" class="name">
+                            <input type="phone" placeholder="Phone" class="noname">
+                            <input type="email" placeholder="email (optional)" class="noname">
+                        </div>
+                    </div>
+
+                    <div class="frame_box jobDetails">
+                        <h2>Job details</h2>
+                        <div class="input_box">
+                            <select class="noname jobTypeOn">
+                                <option value="" disabled selected>Select job type</option>
+                                <option value="option1">Retail Associate</option>
+                                <option value="option2">Barista</option>
+                                <option value="option3">Delivery Driver</option>
+                            </select>
+
+                            <select class="noname jobSourceOn">
+                                <option value="" disabled selected>Job source</option>
+                                <option value="option1">Indeed</option>
+                                <option value="option2">LinkedIn</option>
+                                <option value="option3">Glassdoor</option>
+                            </select>
+
+                            <div class="input_box">
+                                <textarea id="job_description" class="bigger_input"
+                                    placeholder="Job description (optional)"></textarea>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="frame_box serviceLocation">
+                        <h2>Service location</h2>
+                        <div class="input_box">
+                            <input type="text" placeholder="Address" class="noname addressOn">
+                            <input type="text" placeholder="City" class="noname cityOn">
+                            <input type="text" placeholder="State" class="noname stateOn">
+                            <input type="phone" placeholder="Zip code" class="name zipOn">
+                            <select class="name areaOn">
+                                <option value="" disabled selected>Area</option>
+                                <option value="option1">Boston</option>
+                                <option value="option2">Atlanta</option>
+                                <option value="option3">Chicago</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="frame_box scheduled">
+                        <h2>Scheduled</h2>
+                        <div class="input_box">
+                            <input type="date" id="start_date" placeholder="Start date" class="noname jobOnDate">
+                            <select id="start_time" class="name startTimeOn">
+                                <option value="">Select start time</option>
+                                <option value="00:00">00:00</option>
+                                <option value="08:00">01:00</option>
+                            </select>
+                            <select id="end_time" class="name endTimeOn">
+                                <option value="">Select end time</option>
+                                <option value="00:00">00:00</option>
+                                <option value="20:00">01:00</option>
+                            </select>
+                            <input type="text" placeholder="Test select" class="noname testOn">
+                        </div>
+                    </div>
+                </div>
+                <div class="frame_btn">
+                    <button class="create_job">Create job</button>
+                    <button class="save_info">Save info</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+
+</html>
