@@ -30,7 +30,7 @@ x.addEventListener('click', () => {
 })
 
 
-
+// send input info
 const create_job = document.querySelector('.create_job');
 const keyOn_address = document.querySelector('.keyOn_address');
 const keyOn_jobType = document.querySelector('.keyOn_jobType');
@@ -97,4 +97,16 @@ create_job.addEventListener('click', () => {
 
     //add close window after inter info and click create job
     frame.classList.remove('frame_show');
+
+// save info here
+const savedInfo = {
+        keyOn_address: fullAddress,
+        keyOn_jobType: jobType,
+        keyOn_jobSource: jobSource,
+        keyOn_jobDate: jobDate,
+        keyOn_startTime: startTime,
+        keyOn_endTime: endTime,
+        keyOn_tampa: test,
+}
+console.log(savedInfo);
 });
